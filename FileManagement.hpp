@@ -1,9 +1,9 @@
-#ifndef Character_hpp
-#define Character_hpp
+#ifndef FileManagement_hpp
+#define FileManagement_hpp
 
 #include "Character.hpp"
 
 void Save(Character* c);
-Character* Load(void);
+void Load(Character* c);
 
 #endif

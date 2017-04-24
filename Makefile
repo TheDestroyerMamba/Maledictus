@@ -2,8 +2,8 @@
 
 
 
-Maledictus: main.o Character.o Features.o CreationMenu.o Menu.o InnMenu.o DungeonMenu.o Combat.o ConsoleInputControl.o
-	g++ -o Maledictus main.o Character.o Features.o CreationMenu.o Menu.o InnMenu.o DungeonMenu.o Combat.o ConsoleInputControl.o
+Maledictus: main.o Character.o Features.o CreationMenu.o Menu.o InnMenu.o DungeonMenu.o Combat.o ConsoleInputControl.o FileManagement.o
+	g++ -o Maledictus main.o Character.o Features.o CreationMenu.o Menu.o InnMenu.o DungeonMenu.o Combat.o ConsoleInputControl.o FileManagement.o
 #
 #
 #
@@ -30,6 +30,9 @@ Combat.o: Combat.hpp Combat.cpp
 #
 ConsoleInputControl.o: ConsoleInputControl.hpp ConsoleInputControl.cpp
 	g++ -c ConsoleInputControl.hpp ConsoleInputControl.cpp
+#
+FileManagement.o: FileManagement.hpp FileManagement.cpp
+	g++ -c FileManagement.hpp FileManagement.cpp 
 #
 main.o: main.cpp
 	g++ -c main.cpp
